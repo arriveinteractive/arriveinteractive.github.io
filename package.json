@@ -1,0 +1,15 @@
+{
+  "name": "company-website",
+  "version": "1.0.0",
+  "description": "website for the contract work thing with Russ",
+  "main": "index.js",
+  "author": "Kyle Reczek",  
+  "dependencies": {
+  },
+  "scripts" : {
+    "start" : "http-server -o"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
+  }
+}

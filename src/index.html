@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="Dash Interactive">
+	<!-- Meta Description -->
+	<meta name="description" content="Dash interactive is a VR/AR/HTML5 Game based marketing company">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="Virtual Reality VR HTML5 Games Advergames Marketing">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Advergames</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+	<script src="https://rawgit.com/aframevr/aframe/55ed9cd/dist/aframe-master.min.js"></script>
+  <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
+  <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
+  <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+  <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+	<script src="js/set-image.js"></script>
+	<script src="js/marker.js"></script>
+	<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="css/linearicons.css">
+		<link rel="stylesheet" href="css/flaticon.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="main-wrapper-first">
+			<header>
+				<div class="container">
+					<div class="header-wrap">
+						<div class="header-top d-flex justify-content-between align-items-center">
+							<div class="logo">
+								<a href="#"><img src="img/logo.png" alt=""></a>
+							</div>
+							<div class="main-menubar d-flex align-items-center">
+								<nav class="hide">
+									<a href="#">Home</a>
+									<a href="#our-work">Our Work</a>
+									<a href="#contact">Contact</a>
+								</nav>
+								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="banner-area">
+				<div class="container">
+					<div class="row justify-content-center height align-items-center">
+						<div class="col-lg-8">
+							<div class="banner-content text-center">
+								<p class="top">
+									<span class ="h1 text-white text-uppercase">Your Brand</span>
+									<span class ="h4 text-white text-uppercase">+</span>
+									<span id="changing-text" class ="h1 center-text text-white text-uppercase">VR</span>
+								</p>
+								<h3 class="text-white text-uppercase">=</h3>
+								<h1 class="text-white text-uppercase">Amazing Ad Engagement </h1>
+								<br/>
+								<br/>
+								<a href="mailto:hire-us@dashinteractive.com" class="primary-btn d-inline-flex align-items-center" style="font-size:large"><span class="mr-10">Get 30% better ad performance now</span><span class="lnr lnr-arrow-right"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Start Feature Area -->
+			<section class="featured-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="single-feature d-flex flex-wrap justify-content-between">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="flaticon-016-virtual-reality flaticon"></span>
+								</div>
+								<div class="desc">
+									<h6 class="title text-uppercase">360 Videos/Tours</h6>
+									<p>Showcase your brand with incredible 360 content. Tour around on a 360 degree tour, or watch some breathtaking content in full 360 degrees from any device.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="single-feature d-flex flex-wrap justify-content-between">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="flaticon-005-ar-glasses-3 flaticon"></span>
+								</div>
+								<div class="desc">
+									<h6 class="title text-uppercase">Virtual Reality</h6>
+									<p>Take your brand to the forefront of advertising with unique VR content with Daydream/Cardboard/Gear VR to Vive and Occulus</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="single-feature d-flex flex-wrap justify-content-between">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="flaticon-001-gamepad flaticon"></span>
+								</div>
+								<div class="desc">
+									<h6 class="title text-uppercase">HTML5/ Mobile Games</h6>
+									<p>Drive incredible engagement with your brand. Users will be coming back daily to interact with your content.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Feature Area -->
+
+		<!-- Start Amazing Works Area -->
+		</div>
+		<div id="our-work" class="main-wrapper">
+			<section class="amazing-works-area">
+						<div class="item">
+							<div id="sceneContainer" class="caption text-center">
+								<a-scene embedded inspector="" keyboard-shortcuts="" screenshot="" style="height: 864px;" vr-mode-ui="">
+									<a-assets>
+										<a-mixin id="board" geometry="depth: .05; height: 1; width: 6" material="shader: flat" pivot="0 0.5 0" position="0 -1 0"></a-mixin>
+										<a-mixin id="unhinge" attribute="rotation" to="0 0 0" dur="1000" fill="both"></a-mixin>
+										<a-mixin id="select" attribute="color" to="#0000" dur="1000" fill="both"></a-mixin>
+
+										<a-asset-item id="monkey-obj" src="assets/monkey.obj"></a-asset-item>
+    								<a-asset-item id="monkey-mtl" src="assets/monkey.mtl"></a-asset-item>
+										
+										<a-asset-item id="marker-obj" src="assets/marker.obj"></a-asset-item>
+    								<a-asset-item id="marker-mtl" src="assets/marker.mtl"></a-asset-item>
+
+										<img id="inc" crossorigin="anonymous" src="./img/Inc_Sign.jpg">
+										<img id="inc8" crossorigin="anonymous" src="./img/Inc_8.jpg">
+										<img id="inc7" crossorigin="anonymous" src="./img/Inc_7.jpg">
+										<img id="inc6" crossorigin="anonymous" src="./img/Inc_6.jpg">
+										<img id="floor" crossorigin="anonymous" src="./img/floor.png">
+										<img id="monkey" crossorigin="anonymous" src="./img/monkey1.jpg">
+										<img id="banff" crossorigin="anonymous" src="./img/banff_springs.jpg">
+
+									</a-assets>
+
+									<a-sky id="image-360" radius="50" material="color:#97DEE8"></a-sky>
+
+									<a-entity position="0 1 0" camera look-controls>
+										<a-entity cursor="fuse: true;"
+															position="0 0 -5"
+															scale=".1 .1 .1"
+															geometry="primitive: ring"
+															material="color: black; shader: flat">
+											<a-animation begin="click" easing="ease-out-bounce" attribute="scale" dur="150"
+																	 fill="forwards" from="0.01 0.01 0.01" to=".1 .1 .1"></a-animation>
+											<a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" dur="1500"
+																	 fill="backwards" from=".1 .1 .1" to="0.01 0.01 0.01"></a-animation>
+											</a-entity>
+									</a-entity>
+									
+									<a-entity id="dispatcher">
+										<a-entity id="inc_spot1">											
+												<a-entity visible="false" obj-model="mtl:assets/marker.mtl;obj:assets/marker.obj" move-marker="on:click;src:#inc8;markers:#inc_spot2" position="5.186 -1 -0.129" rotation="0 90 0" scale="0.493 0.493 0.493"></a-entity>
+										</a-entity>
+										<a-entity id="inc_spot2">
+											<a-entity visible="false" obj-model="mtl:assets/marker.mtl;obj:assets/marker.obj" move-marker="on:click;src:#inc7;markers:#inc_spot3" position="8.209 -1 1.704" rotation="0 74.25533024895469 0" scale="0.493 0.493 0.493"></a-entity>
+											<a-entity visible="false" obj-model="mtl:assets/marker.mtl;obj:assets/marker.obj" move-marker="on:click;src:#inc;markers:#inc_spot1" position="-7.798 -2.153 -1.437" rotation="0 -100.38220570692023 0" scale="0.493 0.493 0.493"></a-entity>
+										</a-entity>																		
+										<a-entity id="inc_spot3">
+											<a-entity visible="false" obj-model="mtl:assets/marker.mtl;obj:assets/marker.obj" move-marker="on:click;src:#inc6;markers:#inc_spot4" position="9.209 -1 1.704" rotation="0 74.25533024895469 0" scale="0.493 0.493 0.493"></a-entity>
+											<a-entity visible="false" obj-model="mtl:assets/marker.mtl;obj:assets/marker.obj" move-marker="on:click;src:#inc8;markers:#inc_spot2" position="-7.798 -2.153 -1.437" rotation="0 -100.38220570692023 0" scale="0.493 0.493 0.493"></a-entity>
+										</a-entity>																		
+										<a-entity id="inc_spot4">											
+											<a-entity visible="false" obj-model="mtl:assets/marker.mtl;obj:assets/marker.obj" move-marker="on:click;src:#inc7;markers:#inc_spot3" position="-10.203 -2.254 0.472" rotation="0 -100.38220570692023 0" scale="0.493 0.493 0.493"></a-entity>
+										</a-entity>																		
+									</a-entity>
+									
+									<a-entity id="monkeyDesc">
+										<a-box visible="false" mixin="board" color="#FFC65D" geometry="" material="">											
+											<a-entity position="-5 -2 -5" text="align:center; width: 8; value: Mindful Monkey is a Google Cardboard/DayDream app designed to aid in child psychiatric therapy;"></a-entity>
+										</a-box>
+									</a-entity>
+									
+									<a-entity id="floor" geometry="primitive:plane;height:22;width:22" position="0.01 0 0.41" rotation="-90 0 0" scale="1 1 1" material="src:#floor;opacity:0.1;repeat: 7 7;ransparent:true"></a-entity>
+									
+									<a-entity position="0 -1 -8" rotation="0 30 0">
+											<a-animation attribute="position" to="0 5 -8" dur="2000"></a-animation>
+											<a-animation attribute="rotation" from="0 60 0" to="0 10 0" dur="2500"></a-animation>
+
+											<a-box id="menu1" cursor-listener mixin="board" color="#F16745" data-src="#inc" geometry="" material="">
+												<a-animation mixin="unhinge" from="-20 0 0" delay="1000"></a-animation>
+												<a-entity position="0.05 0 0.05" text="align:center; width: 12; value: The Inc;"></a-entity>
+
+													<a-box id="menu2" cursor-listener mixin="board" color="#FFC65D" data-src="#monkey" geometry="" material="">
+														<a-animation mixin="unhinge" from="-175 0 0" delay="250"></a-animation>
+														<a-entity position="0.05 0 0.05" text="align:center; width: 12; value: Mindful Monkey;"></a-entity>
+															<a-box id="menu3" cursor-listener mixin="board" color="#7BC8A4" data-src="#banff" geometry="" material="">
+																<a-entity position="0.05 0 0.05" text="align:center; width: 12;  value: Banff Springs Hotel;"></a-entity>
+															</a-box>
+													</a-box>
+											</a-box>
+									</a-entity>
+
+							</div>
+						</div>
+			</section>
+		</div>
+		<div class="main-wrapper">
+			<!-- End Amazing Works Area -->
+
+			<!-- Start Footer Widget Area -->
+			<section class="footer-widget-area">
+				<div class="container ">
+					<div class="row">
+						<div class="col-md-4">
+							<!-- <div class="single-widget d-flex flex-wrap justify-content-between">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="lnr lnr-pushpin"></span>
+								</div>
+								<div class="desc">
+									<h6 class="title text-uppercase">Address</h6>
+									<p>56/8, panthapath, west <br> dhanmondi, kalabagan, <br>Dhaka - 1205</p>
+								</div>
+							</div> -->
+						</div>
+						<div class="col-md-4 center">
+							<div class="single-widget d-flex flex-wrap justify-content-between">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="lnr lnr-earth"></span>
+								</div>
+								<div class="desc">
+									<h6 class="title text-uppercase">Email Address</h6>
+									<div class="contact">
+										<a href="mailto:info@dashinteractive.com">info@dashinteractive.com</a> <br>
+										<a href="mailto:hire-us@dashinteractive.com">hire-us@dashinteractive.com</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<!-- <div class="single-widget d-flex flex-wrap justify-content-between">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="lnr lnr-phone"></span>
+								</div>
+								<div class="desc">
+									<h6 class="title text-uppercase">Phone Number</h6>
+									<div class="contact">
+										<a href="tel:1545">012 4562 982 3612</a> <br>
+										<a href="tel:54512">012 6321 956 4587</a>
+									</div>
+								</div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Footer Widget Area -->
+			<!-- Start footer Area -->
+			<footer>
+				<div class="container">
+					<div class="footer-content d-flex justify-content-between align-items-center flex-wrap">
+						<div class="logo">
+							<img src="img/logo.png" alt="">
+						</div>
+						<div class="copy-right-text">Copyright &copy; 2017  |  All rights reserved to Dash Interactive</div>
+						<div class="footer-social">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-behance"></i></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End footer Area -->
+		</div>
+
+
+
+
+		<script src="js/vendor/jquery-2.2.4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.nice-select.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
